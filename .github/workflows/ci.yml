@@ -16,7 +16,7 @@ jobs:
         env:
           POSTGRES_DB: pbo_db_todos
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: jose2006#!
+          POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}m
         ports:
           - 5432:5432
         options: >-
